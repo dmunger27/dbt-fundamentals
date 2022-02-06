@@ -6,7 +6,7 @@ with orders as (
         order_date,
         status
 
-    from dbt-tutorial.jaffle_shop.orders
+    from from {{ source('jaffle_shop', 'orders') }}
 
 )
 
